@@ -1,0 +1,48 @@
+# =========================================================================
+# Build Outputs
+# =========================================================================
+[Bb]in/
+[Oo]bj/
+[Log]s/
+
+# =========================================================================
+# User-Specific Files & IDE Settings
+# =========================================================================
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# =========================================================================
+# Package Management & Dependencies
+# =========================================================================
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Tooling and Publishing Outputs
+csx/
+*.build.csdef
+
+# =========================================================================
+# Operating System Files
+# =========================================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Toko.EFCore.Application/Toko.EFCore.Application.csproj" Id="2603e843-69e9-42f9-8af6-388acf5953c6" />
+  <Project Path="Toko.EFCore.Domain/Toko.EFCore.Domain.csproj" Id="8ed6fd7d-49ea-4f20-a846-7ee387d2bf9f" />
+  <Project Path="Toko.EFCore.Infrastructure/Toko.EFCore.Infrastructure.csproj" Id="3d6c9753-71af-45a9-b92b-1dc0656fc18c" />
+  <Project Path="Toko/Toko.csproj" />
+</Solution>
