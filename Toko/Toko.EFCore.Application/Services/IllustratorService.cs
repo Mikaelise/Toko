@@ -10,7 +10,7 @@ namespace Toko.EFCore.Application.Services
         private readonly ITokoEFCoreDBContext _dbContext;
 
         public IllustratorService(
-            ITokoEFCoreDBContext dbContext) 
+            ITokoEFCoreDBContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -36,7 +36,7 @@ namespace Toko.EFCore.Application.Services
             illustrator.Name = updateIllustrator.Name;
             illustrator.Socials = updateIllustrator.Socials;
             illustrator.NSFW = updateIllustrator.NSFW;
-            
+
             await _dbContext.SaveChangesAsync();
             return illustrator.Id;
         }
@@ -52,4 +52,5 @@ namespace Toko.EFCore.Application.Services
             await _dbContext.SaveChangesAsync();
             return illustrator.Id;
         }
+    }
 }
