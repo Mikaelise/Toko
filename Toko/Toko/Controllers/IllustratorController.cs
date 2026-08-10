@@ -16,18 +16,18 @@ namespace Toko.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> InsertAsync([FromBody] InsertUpdateIllustrator insertIllustrator)
+        public async Task<IActionResult> InsertIllustratorAsync([FromBody] InsertUpdateIllustrator insertIllustrator)
         {
             if (insertIllustrator == null)
             {
                 return BadRequest("Invalid illustrator data.");
             }
             var illustratorId = await _illustratorService.InsertAsync(insertIllustrator);
-            return CreatedAtAction(nameof(InsertAsync), new { id = illustratorId }, insertIllustrator);
+            return CreatedAtAction(nameof(InsertIllustratorAsync), new { id = illustratorId }, insertIllustrator);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAsync(int id, [FromBody] InsertUpdateIllustrator updateIllustrator)
+        public async Task<IActionResult> UpdateIllustratorAsync(int id, [FromBody] InsertUpdateIllustrator updateIllustrator)
         {
             if (updateIllustrator == null)
             {
@@ -35,6 +35,14 @@ namespace Toko.Controllers
             }
             var illustratorId = await _illustratorService.UpdateAsync(id, updateIllustrator);
             return Ok();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetIllustratorById(int id)
+        {
+            // Implement the logic to retrieve the illustrator by ID
+            // For now, return a placeholder response
+            return Ok(new { Id = id, Name = "Placeholder Name", Socials = "Placeholder Socials", NSFW = false });
         }
     }
 }
